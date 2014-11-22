@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -26,50 +27,77 @@
   </head>
 
   <body>
-
+    <div class="main">
+      <div class="nav-container">
+        <div class="navbar">
+          <span id="nav-item">
+            <a href='{% url "home" %}' style="font-family: cursive;font-size: 30px;">Du Quantum Transport Lab</a>
+          </span>
+          <span id="nav-item">
+            <a href='{% url "people" %}'>People</a>
+          </span>
+          <span id="nav-item">
+            <a href='{% url "publication" %}'>Publication</a>
+          </span>
+          <span id="nav-item">
+            <a href='{% url "research" %}'>Research</a>
+          </span>
+          <span id="nav-item">
+            <a>Link</a>
+          </span>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="main-left-container">
+          <img src='{% static "Ricelogosmall.jpg" %}' alt="Ricelogo" />
+          <div class="left-info">
+            Principal Investgator<br />
+            RuiRui Du<br />
+            <a href='#'>rrd@rice.edu</a><br />
+            Rice University<br />
+            Physics & Astronomy Dept<br />
+            Dell Butcher Hall 170<br />
+            1900 Rice Blvd Ent.20<br />
+            Houston TX 77005<br />
+            Office: 713-348-5780<br />
+            Lab: 713-348-5719<br />
+          </div>
+        </div>
+        <div class="main-right-container">
+            {% block home %}
+            {% endblock %}
+            {% block people %}
+            {% endblock %}
+            {% block publication %}
+            {% endblock %}
+            {% block research %}
+            {% endblock %} 
+            {% block exciton %}
+            {% endblock %}
+            {% block fqhe %}
+            {% endblock %}
+            {% block magneto-transport %}
+            {% endblock %}
+            {% block many-particle %}
+            {% endblock %}
+            {% block microwave %}
+            {% endblock %}
+            {% block nano-electronics %}
+            {% endblock %}
+            {% block qshe %}
+            {% endblock %}
+            {% block quantum-well %}
+            {% endblock %}
+            {% block shpm %}
+            {% endblock %}
+        </div>
+      </div>
    {% include 'navbar.html'%}
-    <div>
-      This is Du web.
-    </div>
+   
     
-    {% block home %}
-    {% endblock %}
-    {% block people %}
-    {% endblock %}
-    {% block publication %}
-    {% endblock %}
-    {% block research %}
-    {% endblock %} 
-    {% block exciton %}
-    {% endblock %}
-    {% block fqhe %}
-    {% endblock %}
-    {% block magneto-transport %}
-    {% endblock %}
-    {% block many-particle %}
-    {% endblock %}
-    {% block microwave %}
-    {% endblock %}
-    {% block nano-electronics %}
-    {% endblock %}
-    {% block qshe %}
-    {% endblock %}
-    {% block quantum-well %}
-    {% endblock %}
-    {% block shpm %}
-    {% endblock %}
+    
 
-    <div class="container">
-      
-      
-      
-     
-
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
-    </div> <!-- /container -->
-
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
