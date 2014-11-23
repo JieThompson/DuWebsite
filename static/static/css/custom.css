@@ -31,16 +31,35 @@ a{
     text-decoration: none;
 }
 .main-container{
+    
+    height: auto;
     margin-top: 0px;
     background-color: rgb(244, 241, 216);
 }
 .main-left-container{
-    width: 20%;
-    height: auto;
+    width: 25%;
+    height: 3000px;
     background-color: rgb(80, 156, 189);
     float: left;
+    border-top-left-radius: 10px;
 }
 .left-info{
     padding: 10px;
     color: rgb(86, 81, 81);
+    text-align: center;
+}
+.main-right-container{
+    width: 71%;
+    height: auto;
+    float: left;
+    padding: 20px;
+    
+}
+.people-container{
+    text-align: left;
+    width: 60%;
+    height: auto;
+    float: left;
+    margin: 20px;
+    
 }

@@ -45,7 +45,7 @@ def magnetotransport(request):
 
 def manyparticle(request):
     
-    return render_to_response("manyparticle.html",
+    return render_to_response("many-particle.html",
                               locals(),
                               context_instance=RequestContext(request))
 
@@ -57,7 +57,7 @@ def microwave(request):
 
 def nanoelectronics(request):
     
-    return render_to_response("nanoelectronics.html",
+    return render_to_response("nano-electronics.html",
                               locals(),
                               context_instance=RequestContext(request))
 
@@ -69,7 +69,7 @@ def qshe(request):
 
 def quantumwell(request):
     
-    return render_to_response("quantumwell.html",
+    return render_to_response("quantum-well.html",
                               locals(),
                               context_instance=RequestContext(request))
 
