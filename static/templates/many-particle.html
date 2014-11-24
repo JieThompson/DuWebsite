@@ -1,7 +1,154 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block many-particle %}
-<div class='col-sm-12' style='text-align: center;'>
-<h1>Thank you for joining!</h1>
+<div class='home-container' style='text-align: left;'>
+<h4> Many-Particle Physics in Ultracold 2D Electron Systems<em>(Knuuttila)</em></h4>
+<p>
+   <img src='{% static "/media/insert-002-mod.jpg" %}' alt="sandia" width="283" height="429" style="float: right;"/>
+   Experiments in 2D electron system (2DES) can be turned by many "knobs", and multitude many-particle electronic
+    phases and phase transitions can be studied: fractional charged quantum fluid, Wigner lattices, Luttinger liquid,
+    Stripes and liquid crystal-like phases, and Skyrmions, to name a few. Not unlike in AMO where Bose-Einstein
+    condensation was discovered in ultracold atoms, the frontier of 2DES physics is on ultracold electrons. In
+    collaboration with Columbia (Prof. Horst Stormer), Princeton (Prof. Dan Tsui), Stanford (Prof. Doug Osheroff),
+    and funded by DOE, we have been pursuing a major research project (submillikelvin demagnetization refrigerator
+    for solid state research) for experiments on ultracold electrons in low-D semiconductors and nanostructures. One
+    of the objectives is to searching for exotic many-particle electronic states that obey non-Abelien statistics,
+    but there are much more: cooling electrons to lower than few millikelvin becomes increasingly relevant to general
+    issues of quantum decoherence and phase transitions in electronic systems including mesoscopic metals, quantum
+    dots, and quantum magnets. With the capability to cool 2D electrons to lower temperature, we will develop two
+    important tools for studying many-particle states: tunneling into edge of the quantum fluid and NMR for nuclear
+    spins in the host materials (which in turn reflect the spin states in the 2DES).
+    
+    
+</p>
+
+<p>
+    Temperature is effectively a measure of energy contained in an isolated system. When the temperature and thus
+    energy content of a system is lowered toward absolute zero (0 K or -460 F) the weaker interactions within the
+    system can become dominant and the system may often display interesting new behavior. Research in low temperatures
+    has lead to many exciting discoveries in condensed matter and atomic physics, such as superconductivity,
+    superfluidity, nuclear magnetic ordering and Bose-Einstein condensation. The quantum and fractional quantum Hall
+    effects can also only be observed at low temperatures, but additionally they require the presence of a magnetic
+    field. The lower the temperature the more 'pure' these phenomena become, thus motivating the development of
+    experimental techniques to push the boundaries closer to the absolute zero.
+</p>
+<p>
+    Ultra-low temperatures in the milliKelvin-range can be realized by utilizing the exotic properties of the two
+    helium-isotopes, He-4 and He-3. A dilution refrigerator works along the same basic principles as a household
+    fridge, but is technically much more involved.
+</p>
+<p>
+    Temperatures below the 2 mK cooling limit of a dilution refrigerator are achieved by a technique known as
+    adiabatic nuclear demagnetization. This process, first established already in the 1950's uses the magnetic
+    moment of nuclei in a suitable isolated system to reduce the entropy and thus temperature of a demagnetizaton
+    stage. Very low temperatures can be achieved by this method and it has been successfully used to cool electron
+    systems close to 1 microKelvin or alternatively nuclear spin systems to record low temperatures of a 100 pK.
+</p>
+<p>
+    A completely different approach is used for cooling the gaseous Bose-Einstein condensates, combining innovative
+    methods of laser- and evaporative-cooling.
+</p>
+<img src='{% static "/media/Minimum-T-2006.jpg" %}' alt="sandia" width="490" height="619" style="float: none;"/>
+<h5>Experimental Setup</h5>
+<p>
+    The main component of our ultra-low temperature cryostat is a model-1000 dilution refrigerator from Oxford Instruments.
+    It's one of the biggest dilution units manufactured and capable of high circulating flows and high cooling power in the
+    milliKelvin regime. The minimum temperature of the unit is around 6-7 mK.  The dilution unit is used to cool a large high
+    purity copper demagnetization stage, housed inside a 9 Tesla superconducting magnet. Below the demagnetization magnet we
+    have another powerful superconducting magnet to provide the conditions required for studying electron transport in 2
+    dimensions. The sample magnet has a 2" bore and is capable of producing a 14 Tesla field.
+</p>
+<p>
+    The demagnetization stage was machined from high-purity copper (99.999%). It has a cylindrical shape with a diameter of
+    56 mm and length of 600 mm. Thin slits were cut along the longitudinal axis of the stage by a spark cutter to reduce the
+    eddy-currents during sweeping of the external magnet field. The total mass of the stage is about 13 kg. After machining
+    the stage was annealed in order to reduce the effect of trace magnetic impurities and to improve thermal conductivity.
+    The demag-stage is operated by a 9 T superconducting coil.
+</p>
+<figure style="display: inline-block;">
+    <img src='{% static "/media/ResearchUltraCold_clip_image002_0000.jpg" %}' alt="utracold" width="185" height="370" style="float: none;"/>
+    <figcaption style="width: 185px;">Fig. 1. Dewar and 2-stage magnet assembly (demag and sample magnets).</figcaption>
+</figure>
+<figure style="display: inline-block;">
+    <img src='{% static "/media/ResearchUltraCold_clip_image002.jpg" %}' alt="utracold" width="265" height="367" style="float: none;"/>
+    <figcaption style="width: 265px;">Fig. 2. System during operation.</figcaption>
+</figure>
+<figure style="display: inline-block;">
+    <img src='{% static "/media/Insert-001.jpg" %}' alt="utracold" width="534" height="800" style="float: none;"/>
+    <img src='{% static "/media/DemagstageFigs.jpg" %}' alt="utracold" width="500" height="392" style="float: none;"/>
+    <figcaption style="width: 500px;">Fig. 3. (a) The Oxford model 1000 dilution refrigerator and the copper demagnetization
+    stage assembled in the system, (b) Aluminum heatswitch, (c) Platinum NMR thermometer, (d) Sample holder assembly.</figcaption>
+</figure>
+<p>
+    The demag-stage is mounted below the mixing chamber of the Oxford dilution unit by 6 support rods made from Al2O3-tube
+    (Fig. 3a). Al2O3 has very low thermal conductivity at low temperatures and isolates the copper-stage well from the dilution
+    unit. The thermal path to the copper-stage is controlled by a superconducting heat-switch (Fig. 3b). The superconducting
+    material used in the switch is aluminum, which has a very high switching ratio 1600 T -2 (ratio between normal state and
+    sc-state thermal conductivity). The thin copper-foils are soft and provide a flexible section between the demag-stage and
+    dilution unit to allow for a perfect fit when mounting the assembly. The heatswitch Cu-parts were annealed similarly as the
+    main stage. The aluminum section consists of 7 thin foils, 0.25 mm thickness, inserted into narrow slits cut in the Cu-parts
+    and joined by diffusion welding. The switch is operated between the normal and sc-states by a small superconducting coil
+    surrounding it.
+</p>
+<p>
+    Temperature of the demag-stage is monitored by a platinum NMR (nuclear magnetic resonance) thermometer (Fig. 3c). Platinum
+    is a good choice for NMR-thermometry because of two main reasons; the Korringa constant is small (30 msK) so the spin-lattice
+    relaxation is quick and spin-spin relaxation, t2, is long (~1 ms) making the measurement relatively easy. The platinum probe
+    is a wire-brush consisting of ~2000 wires, 0.001" in diameter. It is clamped to a silver-foot that is mounted on the
+    top-flange of the demag-stage. The static coil for the pulsed-NMR measurement is a small superconduncting coil mounted to
+    the bottom of the mixing chamber. The rf-coil for the NMR signal is wound around the Pt-brush from 25 mm Cu-wire and has
+    ~1000 turns. The Pt-NMR thermometer is operated by specifically designed electronics, PLM-5 (RV elektroniikka). The Pt-NMR
+    thermometer was calibrated against the Co-60 NO (nuclear orientation) thermometer between 8 to 20 mK. The Pt-NMR shows
+    excellent linearity over this range, as expected from the Curie-law, M<sub>0</sub> = C/T .
+</p>
+<figure style="display: inline-block;">
+    <img src='{% static "/media/CuVsDemagF.jpg" %}' alt="utracold" width="300" height="266" style="float: none;"/>
+    <figcaption style="width: 300px;">Fig. 4. The measured copper temperature versus demagnetization field is shown. The line shows
+    ideal adiabatic relation, B/T = Bi/Ti.</figcaption>
+</figure>
+<figure style="display: inline-block;">
+    
+    <img src='{% static "/media/DemagHeatleak.jpg" %}' alt="utracold" width="300" height="259" style="float: none;"/>
+    <figcaption style="width: 300px;">Fig. 5.  Heatleak to the demag-stage at 100 mT. The linear fit gives a value of 21 nW.</figcaption>
+</figure>
+<p>
+    The demag-stage displays close to ideal adiabatic performance during demagnization as shown in Fig. 4. The stage
+    was precooled in an 8 T field down to 15.5 mK with the dilution unit in 18 hours. After thermally isolating the
+    stage by opening the heatswitch, the copper was demagnetized down to 20 mT  As seen from Fig. 4 (inset) the Pt-NMR
+    thermometer starts to decouple thermally from the copper-stage below about 0.5 mK. The minimum temperature
+    indicated by the thermometer was 0.24 mK at 20 mT.
+
+</p>
+<p>
+    The heatleak to the demag-stage was measured by monitoring the temperature increase at a 100 mT field (Fig. 5).
+    The resulting value of 21 nW is very reasonable for a stage this large after only 2 days from cooling down the
+    system. At very low temperatures the relaxation rate of some heatleak sources, such as impurities and non-metallic
+    materials, can be very slow, on the order of days/weeks, and the background heatleak should further diminish in
+    a longer cooldown cycle. Thus it can be concluded that the performance of the demag-stage is very good. The
+    Pt-NMR thermometer also performs adequately; the decoupling below 0.5 mK is not an issue at this point as the
+    relevant temperature range for the planned experiments is 1-10 mK.
+
+</p>
+<p>
+    The sample-holder for the semiconductor samples (Fig. 3d) mounts on the bottom of the demag-stage. It consists of
+    3 silver and a triangular sample-flange. The sample wiring is a bundle of 18 wires (8 wires each for 2 samples and
+    2 wires for operating the light-emitting diodes for sample illumination at low temperature). At the mixing chamber
+    the wires go through a powder-filter block for improved thermal anchoring and for filtering out high frequency
+    noise. Wires are anchored all along the demag-stage by attaching the bundle with varnish on the side of the copper.
+</p>
+<p>
+    After mounting the sample on the silver flange with N grease the measurement contacts are provided by soldering
+    the gold bonding wires of the samples directly to the ends of the Cu-wires. This should ensure good thermal
+    anchoring of the contacts to the demag-stage.
+</p>
+<h5>Preliminary Data</h5>
+<figure style="display: inline-block;">
+    
+    <img src='{% static "/media/PrelimData.jpg" %}' alt="utracold" width="595" height="407" style="float: none;"/>
+</figure>
+<h4>Funded by Department of Energy Basic Energy Science Experimental Condensed Matter Physics</h4>
+<a href="http://www.sandia.gov/"><img src='{% static "/media/sandialogosm.jpg" %}' alt="sandia" width=163 height=78/></a>
 </div>
 {% endblock%}
+
+	

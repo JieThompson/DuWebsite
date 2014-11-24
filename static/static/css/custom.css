@@ -6,7 +6,7 @@
 
 .nav-container{
     width: auto;
-    height: 80px;
+    height: 100px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -25,7 +25,7 @@
     color: grey;
 }
 .navbar{
-    padding-top: 15px;
+    padding-top: 20px;
 }
 a{
     text-decoration: none;
@@ -39,13 +39,13 @@ a{
 .main-left-container{
     width: 25%;
     height: 3000px;
-    background-color: rgb(80, 156, 189);
+    background-color:rgb(25, 61, 126);
     float: left;
     border-top-left-radius: 10px;
 }
 .left-info{
     padding: 10px;
-    color: rgb(86, 81, 81);
+    color: rgb(184, 166, 166);
     text-align: center;
 }
 .main-right-container{
@@ -62,4 +62,11 @@ a{
     float: left;
     margin: 20px;
     
+}
+.home-container{
+    text-align: left;
+    width: 95%;
+    height: auto;
+    float: left;
+    margin: 20px;
 }

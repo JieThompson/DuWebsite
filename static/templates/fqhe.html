@@ -1,7 +1,72 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block fqhe %}
-<div class='col-sm-12' style='text-align: center;'>
-<h1>Thank you for joining!</h1>
+<div class='home-container' style='text-align: left;'>
+<h4> 	
+Fractional Quantum Hall Effect Experiments at NHMFL <em>(Zhang, Knuuttila)</em></h4>
+<h5>
+    Introduction : Fractional quantum Hall effect
+</h5>
+<p>
+    In 1980, Von Klitzing discovered integer fractional quantum Hall effect (IQHE) in a Silicon MOSFET in 1980.
+    Fractional quantum Hall effect in two dimensional electron gas (2DEG) was first observed by D. C. Tsui, H. L.
+    Stormer, and Gossard in GaAs/AlGaAs heterojunction. The experiments of FQHE require very low temperature and the
+    sample with a high electron-mobility. Laughlin's theory provides an excellent explanation of FQHE at filling
+    factors 1/3, 1/5, and 1/7, where a new state of matter, an incompressible quantum liquid of electrons can exist
+    due to electron-electron interactions. FQHE indicates the collective properties of electrons. FQHE at lowest
+    Landau level filling factors &#957=1/m (m=1, 3, 5, 7, ...) indicate fractional charged quasiparticles, with charges
+    &#177e/m (minimum excitation), excited over an energy gap. The fractional quantum Hall effect appears also at other
+    odd-denominator fractions, &#957=p/q, p is an integer and q is an odd integer. The features at the hierarchical series
+    &#957=p/(2p&#1771) can be explained by the composite fermion (CF). Composite fermions were originally observed around
+    filling factor 1/2. We can consider each electron in 2DEG as a magnet flux tube, the unit of quantum flux is h/e
+    for one electron. At &#957=1/2, there exists two magneto flux for each electron; the quantum unit is named composite
+    fermion (CF), with a behavior like without external magnetic field. In the second Landau level, the even-denominator
+    state at &#957=5/2 is very intriguing, because it is the unusual FQHE state. The 5/2 state exhibits an precise plateau
+    in Hall resistance and a deep minimum in magnetoresistance.
+</p>
+<h5>
+    Experiments for 5/2 States in a High Electron-Density Quantum Well
+</h5>
+<p>
+    Magnetotransport experiments in high Landau level (N > 0) have revealed several many-particle quantum phases.
+    Well-known examples include the even-denominator fractional quantum Hall states at filling factor 5/2 and 7/2 in
+    the N = 1 LL, and the stripe electronic states responsible for anisotropic resistance observed at 9/2 and 11/2 in
+    the N = 2 LL. It was found, moreover, phase transitions take place between these novel phases if certain
+    parameters can be tuned experimentally. For example, the incompressible 5/2 quantum Hall states are found to
+    become an anisotropic state under a tilted magnetic field [1,2].  Previous experiments were performed using
+    high-mobility GaAs/AlGaAs heterostructure with an electron density in the range of (1.5-3.0)x10<sup>11</sup>/cm<sup>2</sup>.
+    We report here the results for a high electron-density quantum well (QW) with an electron density n<sub>s</sub>
+    &#8771 6x10<sup>11</sup>/cm<sup>2</sup> and a
+    low-temperature mobility
+    &#956 &#8771 1x10<sup>7</sup>cm<sup>2</sup>/Vs.
+</p>
+<h5>
+    Preliminary Data
+</h5>
+<p>	 	
+The experiments were performed using the SCM1 dilution refrigerator/superconducting magnet system; tilted magnetic
+field experiments were facilitated by a sample rotator.  We observe the &#957=5/2 quantum Hall plateau at a high magnetic
+field B&$8771 10T. In contrast to previous findings in a lower n<sub>s</sub>system, electronic transport at filling factors 9/2
+and 11/2 in this QW is essentially isotropic.  Anistropic transport at 9/2 and 11/2 can be induced by an in-plane
+magnetic field B<sub>s</sub>. Depending on the B<sub>s</sub>direction (with respect to the GaAs crystalline axis), the &#957=5/2 diagonal
+resistances in a high B<sub>s</sub> either remain isotropic or become strongly anisotropic.
+</p>
+<h5>
+    Summary
+</h5>
+<p>
+    The 5/2 Quantized Hall plateau is observed at a magnetic field of 10 T in a high-mobility, high-electron density
+    QW, while the resistances at 9/2 and 11/2 are essentially isotropic. The magnetotransport at these filling factors
+    were measured in a tilted magnetic field.  The results indicate a complex response of quantum phases to the
+    in-plane magnetic field.
+</p>
+<h5>Reference</h5>
+<p>
+    <img src='{% static "/media/ResearchNHMFL_clip_image002_0012.gif" %}' alt="sandia" width=394 height=338 style="float:right;"/>
+[1] Pan, W., et al., Phys. Rev. Lett. 83, 820-823 (1999).
+</p>
+<p>
+[2] Lilly, M. P., et al., Phys. Rev. Lett. 83, 824-827 (1999).
+</p>
 </div>
 {% endblock%}

@@ -1,7 +1,40 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block shpm %}
-<div class='col-sm-12' style='text-align: center;'>
-<h1>Thank you for joining!</h1>
+<div class='home-container' style='text-align: left;'>
+<h4> 	SHPM Imaging of Current Distribution in 2DES <em>(Yuan)</em></h4>
+<p>
+    <img src='{% static "/media/NanoMagnetics-Instruments-m.jpg" %}' alt="sandia" width=480 height=212 style="float:right;"/>
+    One ongoing project is to develop a scanning Hall probe microscopy for simultaneously imaging the electrical
+    current pattern formation and measuring dc transport. If this is successful we will be able to study the domain
+    states proposed by theories in the radiation induced zero-resistance states.
+</p>
+<p>
+    To understand the MIRO and ZRS better and confirm the domain formation of current distribution on 2DEG under
+    microwave radiation, a good way is to image the current distribution directly. To accomplish this job, we will
+    measure the magnetic field produced by the current distribution and rebuild the current distribution from this
+    magnetic field profile.
+<p>
+    To rebuild the current distribution from the magnetic field profile doesn't have unique solution in 3D case.
+    However, if the current is restricted to 2D, the problem can be solved uniquely. B. J. Roth et al [J. Appl. Phys.
+    65, 361 (1988)] developed a mathematical algorithm based on the Fourier transform technique to obtain the 2D
+    current distribution from measured perpendicular component of the magnetic field.
+<p>
+     To measure the perpendicular component of the magnetic field, we will use the Scanning Hall Probe Microscope
+     (SHPM). The basic principle of SHPM is the STM technique, but instead of using tunneling tips, SHPM uses a small
+     Hall bar as a scanning probe. When magnetic field acts on the Hall probe, a Hall voltage will be produced by the
+     magnetic field. According to the classical Hall effect, this Hall voltage is proportional to magnetic field
+     perpendicular to the Hall probe surface. Hence, by measuring this Hall voltage, the SHPM can image the profile of
+     the perpendicular component of the magnetic field. For more details of SHPM, please check the website:
+
+</p>
+
+<p>
+
+<a href="http://www.nanomagnetics-inst.com">http://www.nanomagnetics-inst.com </a>
+</p>
+<p>
+<img src='{% static "/media/SPM.jpg" %}' alt="sandia" width=429 height=360 style="float:none;"/>
+</p>
 </div>
 {% endblock%}

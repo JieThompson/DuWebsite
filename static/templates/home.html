@@ -1,7 +1,21 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block home %}
-<div class='col-sm-12' style='text-align: center;'>
-<h1>Thank you for joining!</h1>
+<div class='home-container' style='text-align: left;'>
+<h3>Introduction</h3>
+<p> <img src='{% static "/media/GroupPic.jpg" %}' alt="Ricelogo" width="425" height="319" style='float: right;'/>
+    Research in the Quantum Transport Lab is centered on the experimental investigations on the physics of low
+    dimensional electron systems, in particular on the fractional quantum Hall effect, and on quantum transport of
+    nonequilibrium electronic systems. The research work focuses on fundamental understanding of quantum mechanical
+    properties of electrons in low dimensional and nanoscale semiconductor structures and devices. Here is an outline
+    of current research topics.
+    
+    2D and 1D electron systems provide both a clean laboratory for many-particle physics and a unique platform
+    addressing emerging issues in spintronics and solid-state quantum information devices. Our recent research has
+    been centered on these two themes and has been supported by DOE, NSF, and DARPA. The materials used are mainly
+    GaAs/AlGaAs heterostructures and quantum wells, but also include Si and GaN depending on the physics involved.	 	 
+</p> 	 	 	 	 
+<p>    For more information regarding this group please send all inquiries to Dr. Du at <a href="#">rrd@rice.edu</a>.
+</p>
 </div>
 {% endblock%}

@@ -1,7 +1,60 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block magneto-transport %}
-<div class='col-sm-12' style='text-align: center;'>
-<h1>Thank you for joining!</h1>
+<div class='home-container' style='text-align: left;'>
+<h4>  	Magnetotransport in Two Dimensional Electron/Hole System <em>(Dai)</em></h4>
+<p>
+    The material in our experiment is compound semiconductor, such as, GaAs and InGaAs, two dimensional electron
+    gas (2DEG)  is confined inside the quantum well and random distributed in a plane
+</p>
+<figure style="display: inline-block;">
+    <img src='{% static "/media/ResearchMagTrans_clip_image004.jpg" %}' alt="utracold" width="170" height="220" style="float: none;"/>
+    <img src='{% static "/media/ResearchMagTrans_clip_image006.jpg" %}' alt="utracold" width="141" height="169" style="float: none;"/>
+    <img src='{% static "/media/ResearchMagTrans_clip_image008.jpg" %}' alt="utracold" width="121" height="153" style="float: none;"/>
+    <figcaption style="width: 500px;">FIG.1 a) structure of InGaAs/InAlAs/InGaAs  b) band structure c) quantum well and one side Si+ doping layer</figcaption>
+</figure>
+<p>
+    The density of state of 2DEG is uniform to different energy which is different from one dimensional electron gas
+    (1DEG)  and three dimensional electron gas(3DEG).  But when the sample in a perpendicular magnetic field, all the
+    electrons in the plane start cyclotron motion which causes the density of state discrete.(FIG2.) and occupied
+    energy level become not continue anymore and landau level appear.
+</p>
+<figure style="display: inline-block;">
+    <img src='{% static "/media/ResearchMagTrans_clip_image002_0000.jpg" %}' alt="utracold" width="377" height="155" style="float: none;"/>
+    <figcaption style="width: 377px;">FIG2 first one is density of state without magnetic filed second one (a,b,c included) is with magetic filed.</figcaption>
+</figure>
+<p>
+    Landau level is E=(n-1/2)&#295&#969<sub>c</sub>,&#969<sub>c</sub>=|eB/m|. So the energy space between each level
+    is &#295&#969<sub>c</sub>. In room temperature, the
+    exciting energy k<sub>B</sub>T&#8811&#295&#969<sub>c</sub>. Landau level cannot be observed. Only when in very
+    low temperature,k<sub>B</sub>T&#8810&#295&#969<sub>c</sub>. landau
+    level becomes well resolvable. So usually we run experiment in 0.3 K in a top loading He-3 refrigerate.  (FIG3 ).
+    The magnetic field is from a superconducting magnet.
+</p>
+<figure style="display: inline-block;">
+    <img src='{% static "/media/ResearchMagTrans_clip_image003.gif" %}' alt="utracold" width="556" height="392" style="float: none;"/>
+    <figcaption style="width: 377px;">FIG3.top loading He-3 refrigerate Integral quantum Hall Effect is usually found in hall trace magentotransport experiment. (FIG4). See integral quantum hall effect link</figcaption>
+</figure>
+<figure style="display: inline-block;">
+    <img src='{% static "/media/ResearchMagTrans_clip_image002_0001.gif" %}' alt="utracold" width="456" height="266" style="float: left;"/>
+    <figcaption style="width: 377px;">FIG3.top loading He-3 refrigerate Integral quantum Hall Effect is usually found in hall trace magentotransport experiment. (FIG4). See integral quantum hall effect link</figcaption>
+</figure>
+<p>
+    Spin effect sometimes also involved in magnetotransport. Rashba effect is one kind (FIG.5) In the asymmetric
+    quantum well. , there is an electric field perpendicular to layers and it transforms into magnetic field  in
+    the rest frame of an electron moving along the layer. And this magnetic field leads to spin splitting. So without
+    external magnetic fields, we also see spin splitting effect and this is the Rashba effect.
+</p>
+<figure style="display: inline-block;">
+    <img src='{% static "/media/ResearchMagTrans_clip_image002_0001.jpg" %}' alt="utracold" width="528" height="222" style="float: none;"/>
+    <figcaption style="width: 377px;">FIG3.top loading He-3 refrigerate Integral quantum Hall Effect is usually found in hall trace magentotransport experiment. (FIG4). See integral quantum hall effect link</figcaption>
+</figure>
+<p>
+    Recently, we are looking in the current induced magento transport of hole carrers and find the similar peak to
+    zener tunneling in electrons system [1]. More results will be present for this special topic.
+</p>
+<p>
+    [1]  Yang et al. Phys. Rev. Lett. 89, 076801 (2002)
+</p>
 </div>
 {% endblock%}

@@ -1,7 +1,64 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block qshe %}
-<div class='col-sm-12' style='text-align: center;'>
-<h1>Thank you for joining!</h1>
+<div class='home-container' style='text-align: left;'>
+<h3>Quantum Spin Hall Effect in Inverted InAs/GaSb QWs <em>(Ivan Knez, Lingjie Du)</em></h3>
+<p>
+    We study the quantum spin Hall insulating states in InAs/GaSb quantum wells where electron-hole bilayer
+    naturally occurs due to the unique broken-gap band alignment of InAs and GaSb. In particular, the conduction
+    band of InAs is some 150 meV lower than the valence band of GaSb, which results in charge transfer between
+    the two layers, and emergence of coexisting 2D sheets of electrons and holes, trapped by wide gap AlSb barriers,
+    as shown in Fig 1a. The positions of the electron and hole subbands can be altered by changing the thickness of
+    InAs and GaSb layers, resulting in topologically trivial and non-trivial energy spectra shown in Fig 1b for
+    narrower wells and wider wells, respectively. In addition, due to the charge transfer and
+    
+    resulting band bending, both the topology of the band structure as well as the position of the Fermi energy can
+    be continuously tuned via front and back gates.
+    </p>
+    <p>
+	In the topologically non-trivial regime, electron-hole subbands cross for some wave-vector values kcross and
+        due to the tunneling between the wells, electron and hole states hybridize, lifting the degeneracy at kcross
+        and opening an inverted energy gap on the order of 40 - 60K. It has been proposed that at the edge of the
+        system, this inverted mini-gap must close before the normal gap such as in nearby native oxides or vacuum can
+        open, necessitating a linearly dispersing helical edge spectrum. Initial evidence for such helical states has
+        been previously reported, albeit their unequivocal identification has been limited due to finite bulk density
+        of states in the mini-gap, resulting from disorder broadening and imperfect hybridization of electron-hole levels.
+    </p>
+    <p>
+	Remarkably, as shown here, these 2D bulk states can be localized even at finite temperatures by Si dopants of
+        a relatively small density (~1.1011cm<sup>-2</sup>, equivalent to 1,000 atoms in 1mm x 1mm device) at the interface,
+        which serve as donors in InAs and acceptors in GaSb, creating a mobility gap of ~26K in the bulk energy
+        
+        spectrum. On the other hand, because the edge states are topological in nature, the disorder has very little
+        effect on their existence and transport properties. In fact, as the Fermi energy is tuned into the mobility gap
+        via front gates, longitudinal conductance measurements in &#960-bar configuration, as well as that in the Hall bar
+        geometry for the mesoscopic 2&#956m x 1&#956m samples, reveal wide plateaus near perfectly quantized to 4e<sup>2</sup>/h and 2e<sup>2</sup>/h,
+        respectively (Fig 1d), as expected for helical edge channels based on Landauer-Buttiker analysis. Here the
+        conductance value here is quantized to better than one percent.
+    </p>
+    <p>
+        Unlike in QH systems where edge conductance is present even in macroscopic samples, in QSH systems, for longer
+        devices the loss of phase coherence allow counter-propagating edge modes to back-scatter and conductance will
+        decay with length of the device. Indeed, as shown in Fig. 2, as the length of the Hall bar is to macroscopic
+        dimensions, longitudinal resistance in the mobility gap linearly increases with the device length. In this
+        case, approximate longitudinal resistance is obtained by series addition of N~L/&#955&#968 half-quantum resistors,
+        giving a total resistance value of (L/ &#955&#968)&#8226h/2e<sup>2</sup>. This approximation is in excellent agreement with the data,
+        giving &#955&#968 = 4.4 &#955m.
+    </p>
+    <p>
+	The energy scale of the 2D mobility gap is quantitatively determined from transport measurements in Corbino
+        samples as a function of temperature and magnetic field. In Corbino disk geometry, edge transport is shunted
+        via concentric contacts, and hence conductance measurements probe bulk properties exclusively. In this case,
+        transverse conductance is suppressed to zero in the mobility gap, showing exponentially activated temperature
+        dependence and allowing direct extraction of mobility gap values. As shown in Fig 3E, the mobility gap
+        increases from ~26K at zero magnetic field to ~ 40K at 6T. In consequence, at temperatures on the order of
+        1K and below, the system is completely bulk insulating and transport occurs only along the edge. As a result,
+        quantized conductance in mesoscopic structures (Fig. 1) and finite resistance values in longer devices (Fig 2)
+        are solely a property of the topological edge channels. Scanning SQUID image of current distribution by
+        Stanford group <em style="color: rgb(34, 216, 231);">[Spanton et al. Phys. Rev. Lett. 113, 026804 (20140)]</em> is shown in Fig. 3, confirming that
+        currents are carried by edge channel in the QSHE. 
+        
+
+</p>
 </div>
 {% endblock%}

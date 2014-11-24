@@ -1,7 +1,76 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block quantum-well %}
-<div class='col-sm-12' style='text-align: center;'>
-<h1>Thank you for joining!</h1>
+<div class='home-container' style='text-align: left;'>
+<h4>  	Novel DC Transport Phenomena and Effect in a AC Driven Quantum Well <em>(Yang, Stone, Yuan)</em></h4>
+<p>
+<img src='{% static "/media/antidotlatticesm.jpg" %}' alt="sandia" width=256 height=135 style="float: right;"/>
+    Electrical transport of a 2DES exposed to a high frequency (from GHz to THz) driving electromagnetic wave is
+    directly relevant to emerging issues concerning spintronics and quantum information processing. Fundamentally
+    new phenomena of magnetoresistance oscillation and zero-resistance/zero-conductance have been discovered in our
+    lab during the recent years (Phys. Today, Search & Discovery April 2003). We will continue to explore this new
+    effect and its physics.
+    <img src='{% static "/media/Fig4-power-no-line.jpg" %}' alt="sandia" width=491 height=305/>
+</p>
+<p>
+    Irradiating a high-mobility, two-dimensional electron system (2DES) with GHz microwaves causes microwave-induced
+    resistance oscillations (MIRO) at He3 temperatures when a magnetic field B is swept at low fields.  In addition
+    to MIRO and Shubnikov-de Haas (SdH) oscillations, a resistance oscillation with B-periodic magneto-oscillations
+    has recently been discovered.  These new oscillations have been attributed to the interference of edge
+    magnetoplasmons emitted from the potential probe leads along the length of the 2DES Hall bar a distance L apart.
+    These edge magnetoplasmon oscillations (EMPO) had previously not been reported in samples where a MIRO signal was
+    strong enough to study.  We explored the relationship between these two signals by taking photovoltage and
+    photoresistance measurements on a 2DES AlGaAs/GaAs heterointerface over microwave frequencies ranging from 27 -
+    130 GHz. 
+</p>
+<p>
+    <img src='{% static "/media/realhallbarpic1.jpg" %}' alt="sandia" width=337 height=300 style="float: right;"/>
+    Contrary to MIRO, the EMPO signal has weak temperature dependence and the amplitude drops away logarithmically
+    with decreasing microwave power.  By optimizing the sample's temperature and the microwave irradiation power we
+    were able to observe both MIRO and EMPO.  Depending on the frequency of irradiation, we also observed the
+    interaction between the MIRO and EMPO as their signals overlapped, indicating that they are independent
+    phenomena.  Our results also indicate that the period of the EMPO does not depend on the distance L between the
+    potential probes, contrary to what the current literature states.
+    <img src='{% static "/media/EMPO1.jpg" %}' alt="sandia" width=499 height=556/>
+</p>
+<h4>Quantum Transport in 2DEG with Antidot lattices</h4>
+<p>
+    Two dimensional electron gas (2DEG) is a very good and clean system for research on electron transport. In the
+    past years, there were many amazing discoveries on it, such as...... . To have better understanding on the electron
+    scattering on 2DEG, artificial 1D or 2D periodic scattering centers were introduced on this clean electron system.
+    The artificial 2D periodic scattering centers are the so-called antidote lattices. Usually, there are three ways
+    to introduce antidote lattices on 2DEG in GaAs samples. The first one is that the antidote lattices are fabricated
+    by Ga focused ion beam implantation. The energy Ga ions beam hits on the sample surface resulting in Ga ions dwell
+    on the surface to form antidote lattices. The second one is to use electrostatically induction. With lithography
+    technique, a grid of gate electrode can be defined on the sample surface. By changing the gate voltage, the local
+    electrons can be depleted so that an antidot pattern is transferred on the 2DEG. The third method is make local
+    damages on the sample surface to form antidote lattices. As this is the way we are using, we will describe it in
+    more details. We coat the sample with PMMA photoresist and define an antidot lattice pattern on the photoresist
+    with e-beam lithography. Then we use reactive ion etching to etch the sample surface. These local damages on the
+    surface will deplete the electrons below them so that antidot lattices can be achieved on 2DEG.
+</p>
+<img src='{% static "/media/antidot1.jpg" %}' alt="sandia" width=634 height=505 style="text-align: center;"/>
+<p>
+    By measuring the magnetoresistance, a new kind of oscillation, so-called geometrical resonance, was found on 2DEG
+    with antidot lattices by D. Weiss [Phys. Rev. Lett. 66, 2790 (1991)]. The magnetoresistance will show a series of
+    peaks when the radius of cyclotron is commensurate to the period of the antidot lattices. The following figure is
+    a typical trace we got from our sample. The insert shows the cyclotron orbits corresponding to geometrical
+    resonance peaks.
+</p>
+<img src='{% static "/media/antidot2.jpg" %}' alt="sandia" width=663 height=470 style="text-align: center;"/>
+<p>
+    	The subject of electronic transport in a high-mobility 2DEG under microwave irradiation and a small magnetic
+        field has attracted much recent attention, partly because of the spectacular microwave-induced magneto-
+        resistance oscillations (MIRO) and the subsequent zero-resistance states observed in very clean samples. But
+        the role of scatters play in MIRO is an unsettled issue. A 2DEG with antidots provides us a very good system
+        to investigate this problem. So far, we measured the MIRO on 2DEG with triangular antidot lattices. The
+        antidot diameter is 300nm and the lattice constant is 1500nm. In this sample, we found that the antidots
+        affected the MIRO only by decreasing the quality of the sample and the GR, MIRO and magnetoplasmon resonance
+        decouple each other on this sample. Ths result was published on Phys. Rev. B 74, 075313 (2006).   Main reason
+        for this decoupling behavior should be due to the large lattice constant of the antidot lattice. In future,
+        we will shorten the antidot diameter and lattice constant of the antidot lattice. We believe that periodical
+        modulation with short period approaching magnetic length should lead to characteristically new behavior in the
+        MIRO and ZRS.
+</p>
 </div>
 {% endblock%}
